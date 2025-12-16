@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: flask-demo
-        image: ghcr.io/<YOUR_GITHUB_USERNAME>/flask-demo:latest
+        image: ghcr.io/sandeepanumula92/flask-demo:latest
         ports:
         - containerPort: 5000
