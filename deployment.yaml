@@ -2,8 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flask-demo
+  labels:
+    app: flask-demo
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: flask-demo
@@ -11,6 +13,10 @@ spec:
     metadata:
       labels:
         app: flask-demo
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "/metrics"
+        prometheus.io/port: "5000"
     spec:
       containers:
       - name: flask-demo
