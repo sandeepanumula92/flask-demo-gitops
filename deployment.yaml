@@ -19,7 +19,7 @@ spec:
         prometheus.io/port: "5000"
     spec:
       containers:
-      - name: flask-demo
-        image: ghcr.io/sandeepanumula92/flask-demo:latest
-        ports:
-        - containerPort: 5000
+        - name: flask-demo
+          image: ghcr.io/sandeepanumula92/flask-demo:78c73c4
+          ports:
+            - containerPort: 5000
