@@ -2,7 +2,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: flask-demo
-  namespace: monitoring   # MUST match Prometheus namespace
+  namespace: observability   # MUST match Prometheus namespace
   labels:
     release: observability   # MUST match Helm release name
 spec:
