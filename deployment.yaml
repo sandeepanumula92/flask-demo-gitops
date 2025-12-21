@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name: flask-demo
-          image: ghcr.io/sandeepanumula92/flask-demo:f0b2537
+          image: ghcr.io/sandeepanumula92/flask-demo:8da846b
           ports:
             - containerPort: 5000
